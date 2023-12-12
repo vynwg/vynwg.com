@@ -81,7 +81,7 @@ online_indexformat = "elasticlunr_javascript"
 
 uglyurls = false
 integrity = true
-js_bundle = false
+js_bundle = true
 
 js_copycode = true
 js_email_encode = true
