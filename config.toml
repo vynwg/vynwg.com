@@ -68,8 +68,7 @@ foothr = true
 title_separator = "|"
 title_addition = ""
 author = "Vinícius W"
-google = "Your Google Site verification code."
-seo = true
+seo = false
 
 feed = false
 mail = "me@vynwg.com"
@@ -92,7 +91,7 @@ js_switcher_default = "dark"
 
 stylesheets = ["abridge.css"]
 
-webmanifest = "manifest.min.json"
+webmanifest = ""
 
 pwa = false
 
