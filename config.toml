@@ -2,200 +2,88 @@ base_url = "https://vynwg.com"
 
 title = "Vynwg"
 description = "Vinícius W's personal page"
-theme = "abridge"
+author = "Vinícius W."
+theme = "tabi"
 
-default_language = "en"
-compile_sass = true
-minify_html = false
-build_search_index = true
+
 generate_feed = true
+compile_sass = true
+minify_html = true
+
+build_search_index = false
 taxonomies = [
-#    {name = "categories", feed = true},
     {name = "tags", feed = true},
 ]
-
-[search]
-index_format = "elasticlunr_javascript"
-include_title = true
-include_description = true
-include_content = true
 
 [markdown]
 highlight_code = true
 highlight_theme = "css"
-render_emoji = false
-external_links_target_blank = true
-external_links_no_follow = false
-external_links_no_referrer = false
-smart_punctuation = false
+smart_punctuation = true
 
 [extra]
+theme_switcher = true
+default_theme = ""
+skin = "mint"
+
+browser_theme_color = "#087e96"
+stylesheets = []
+
+base_canonical_url = "https://vynwg.com"
+
+remote_repository_url = "https://github.com/vynwg/vynwg.com"
+remote_repository_git_platform = "auto"
+remote_repository_branch = "master"
+show_remote_changes = true
+show_remote_source = true
+
+copy_button = true
+
+show_reading_time = false
+footnote_backlinks = false
+
+katex = false
+quick_navigation_buttons = false
+toc = false
+long_date_format = "%d %B %Y"
+
+short_date_format = "%-d %B %Y"
+
+separator = "|"
+invert_title_order = false
+
+favicon = "/favicon.svg"
+favicon_emoji = "🌱"
 
 menu = [
-#    {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
-    {url = "about", name = "About", slash = true, blank = false, size="s110"},
-#    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
-    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
-]
-menu_footer = [
-    {url = "about", name = "About", slash = true, blank = false},
-    {url = "contact", name = "Contact", slash = true, blank = false},
-    {url = "privacy", name = "Privacy", slash = true, blank = false},
-    {url = "sitemap.xml", name = "Sitemap", slash = false, blank = true},
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
 ]
 
-toc = true
-recent = true
-recent_items = 15
-series = true
-series_items = 9
+feed_icon = false
+full_content_in_feed = false
 
-meta_index = { position="bottom", size="s90", author=false, readtime=false, readstring="min", date=true, updated=false, categories_tags=true, divider="" }
-meta_post = { position="top", size="s95", author=true, readtime=false, readstring="min read", date=true, updated=true, categories_tags=true, divider="" }
+email = "dmluaWNpdXNAdnlud2cuY29t"
+encode_plaintext_email = false
 
-hide_section_dates = false
-hide_page_nextprev_titles = false
-title_size_index = "s85"
-footer_size = "s90"
-footer_credit = false
+socials = [
+    { name = "github", url = "https://github.com/vynwg/", icon = "github" },
+    { name = "instagram", url = "https://instagram.com/vyn.wg", icon = "instagram" },
+]
 
-logo = { file="favicon.svg", width="32", height="32", text=" <font color=\"#f09900\">Vynwg</font>" }
+footer_menu = [
+    {url = "about", name = "about", trailing_slash = true},
+    {url = "privacy", name = "privacy", trailing_slash = true},
+    {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
+]
 
-sitedesc = true
-headhr = true
-foothr = true
+allowed_domains = [
+    { directive = "font-src", domains = ["'self'", "data:"] },
+    { directive = "img-src", domains = ["'self'", "https://*", "data:"] },
+    { directive = "script-src", domains = ["'self'"] },
+    { directive = "style-src", domains = ["'self'"] },
+    { directive = "frame-src", domains = ["player.vimeo.com", "https://www.youtube-nocookie.com"] },
+]
 
-title_separator = "|"
-title_addition = ""
-author = "Vinícius W"
-seo = false
-
-feed = false
-mail = "me@vynwg.com"
-instagram = "vyn.wg"
-github = "vynwg"
-twitch = "vynwg"
-
-online_url = "https://vynwg.com"
-online_indexformat = "elasticlunr_javascript"
-
-uglyurls = false
-integrity = true
-js_bundle = true
-
-js_copycode = true
-js_email_encode = true
-js_prestyle = true
-js_switcher = true
-js_switcher_default = "dark"
-
-stylesheets = ["abridge.css"]
-
-webmanifest = ""
-
-pwa = false
-
-favicon_svg = "favicon.svg"
-
-
-###############################################################################
-### Icons
-### Loading the entire fontawesome icon collection will negatively impact your sites performance.
-### For a lightweight solution consider adding only the icons that you need to the following file:
-### https://github.com/Jieiku/abridge/blob/master/sass/include/_icons.scss
-###############################################################################
-
-### To disable any of these icons set them to "false" (will default to unicode icons instead)
-#icon_search = "svgs search" # Search button in search box.
-#icon_adjust = "svgs adjust" # Theme Switcher button in top menu. (add class svgh to change colors on hover)
-#icon_first = "svgs svgh angll" # Pagination First Page.
-#icon_prev = "svgs svgh angl" # Pagination Previous Page.
-#icon_next = "svgs svgh angr" # Pagination Next Page.
-#icon_last = "svgs svgh angrr" # Pagination Last Page.
-#icon_top = "svgs svgh angu" # Back to Top Button.
-
-#icon_read = "svgs fa-solid fa-glasses" # displayed in metadata on index and below title on page.
-#icon_date = "svgs fa-solid fa-calendar" # displayed in metadata on index and below title on page.
-#icon_info = "svgs fa-solid fa-circle-info" # displayed in metadata on index and below title on page for categories/tags
-#icon_author = "svgs fa-solid fa-pen-fancy" # displayed in metadata on index and below title on page.
-
-### Uncomment below line to load fontawesome, eg: <i class="fa-solid fa-heart"></i>
-#fontawesome = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
-#icon_read = "svgs fa-solid fa-glasses" # displayed in metadata on index and below title on page.
-#icon_date = "svgs fa-solid fa-calendar" # displayed in metadata on index and below title on page.
-#icon_info = "svgs fa-solid fa-circle-info" # displayed in metadata on index and below title on page for categories/tags
-#icon_author = "svgs fa-solid fa-pen-fancy" # displayed in metadata on index and below title on page.
-
-
-###############################################################################
-### Security Settings
-### Security Headers should preferably be set by your webserver (Nginx, Apache)
-###   https://observatory.mozilla.org  https://csp-evaluator.withgoogle.com/
-### If you are unable to load your security headers with your webserver, this will load a couple of them as meta tags.
-### There are many other security related headers most of which can only be set by the webserver method.
-### If you happen to use Netlify, you can define all the headers in your netlify.toml file:
-###   https://github.com/Jieiku/abridge/blob/master/netlify.toml
-### UnComment any of these lines to enable their meta tags.
-###############################################################################
-
-#security_header_referrer = "strict-origin-when-cross-origin"
-
-#security_header_csp = "default-src 'none'; object-src 'none'; base-uri 'self'; manifest-src 'self'; connect-src 'self'; form-action 'self'; script-src 'self'; img-src 'self' data: cdn.cloudflare.com; frame-src 'self' www.youtube-nocookie.com player.vimeo.com; media-src 'self' data: cdn.cloudflare.com www.youtube-nocookie.com player.vimeo.com; font-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.gstatic.com; style-src 'self' cdn.cloudflare.com cdn.jsdelivr.net fonts.googleapis.com;"
-
-
-###############################################################################
-### FONTS - Abridge by default uses the System Font Stack
-###   https://css-tricks.com/snippets/css/system-font-stack/
-### However if you need you can load a specific font below,
-###   make sure to have the relevant woff2 fonts in your static/fonts folder
-### I measured the least Cumulative Layout Shift with: Roboto, Lato, Arimo
-###############################################################################
-
-### For externally loaded Fonts, make sure to include the FULL url including the https prefix:
-
-#fonts = [ {url = "https://fonts.googleapis.com/css?family=Roboto:400,700,italic|Roboto+Mono:400,italic"} ]
-
-### Local fonts are defined in the css, https://github.com/Jieiku/abridge/tree/master/COPY-TO-ROOT-SASS/fonts/_Arimo.scss
-### To load a local font resource, look at the bottom of this file: https://github.com/Jieiku/abridge/blob/master/COPY-TO-ROOT-SASS/abridge.scss
-
-### After loading them in the CSS, You can also define them below and it will add the preload tag to the head.
-### preloading fonts will eliminate Content Layout Shift, but will hurt with page load time. (not recommended)
-
-#fonts = [
-#    {url = "fonts/Roboto-Mono.woff2"},
-#    {url = "fonts/Roboto-Mono-Italic.woff2"},
-#    {url = "fonts/Roboto.woff2"},
-#    {url = "fonts/Roboto-Italic.woff2"},
-#    {url = "fonts/Roboto-Bold.woff2"},
-#]
-
-
-###############################################################################
-### Katex - math js library, used to to render mathematical notations
-### It's best to enable katex on a per page bases as I did here:
-###   https://abridge.netlify.app/overview-math/
-###   https://github.com/Jieiku/abridge/blob/master/content/overview-math.md?plain=1#L11-L13
-### Otherwise you will load the katex related javascript on every page!
-###############################################################################
-
-#katex_options = "js/katexoptions.js"
-#katex_bundle = "js/katexbundle.min.js"
-
-### Load Katex Local Resources
-#katex_css = "katex.min.css" # Fonts - load the css/fonts locally
-#katex_js = "js/katex.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
-#mathtex_js = "js/mathtex-script-type.min.js" # use local js, so that we dont have to whitelist cdn.jsdelivr.net for script src in CSP
-#katex_autorender_js = "js/katex-auto-render.min.js"
-
-### Load Katex External Resources
-#katex_css = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" # Fonts - use remote fonts
-#katex_css_integrity = "sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs"
-#katex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"
-#katex_js_integrity = "sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4"
-#katex_autorender_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"
-#katex_autorender_js_integrity = "sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
-#mathtex_js = "https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/mathtex-script-type.min.js"
-#mathtex_js_integrity = "sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT"
-
-#math = false # Recommended setting false, and enable on per page bases instead.
-#math_auto_render = false # Recommended setting false, and enable on per page bases instead.
+custom_subset = true
