@@ -22,7 +22,7 @@ smart_punctuation = true
 
 [extra]
 theme_switcher = true
-default_theme = ""
+default_theme = "dark"
 skin = "mint"
 
 browser_theme_color = "#087e96"
@@ -52,7 +52,6 @@ separator = "|"
 invert_title_order = false
 
 favicon = "/favicon.svg"
-favicon_emoji = "🌱"
 
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
