@@ -1,0 +1,8 @@
+site:
+  title: cobalt blog
+  description: Blog Posts Go Here
+  base_url: https://vynwg.com
+posts:
+  title: My blog!
+  description: Blog description
+  rss: rss.xml
