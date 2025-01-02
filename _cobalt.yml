@@ -1,8 +1,25 @@
+include_drafts: true
+
+syntax_highlight:
+    theme: "base16-ocean.dark"
+    enabled: true
+
+default:
+    excerpt_separator: "\n\n"
+    is_draft: true
+    format: Markdown
+
 site:
-  title: cobalt blog
-  description: Blog Posts Go Here
-  base_url: https://vynwg.com
+    title: cobalt blog
+    description: Blog Posts Go Here
+    base_url: https://vynwg.com
+    sitemap: sitemap.xml
+
 posts:
-  title: My blog!
-  description: Blog description
-  rss: rss.xml
+    title: My blog!
+    description: Blog description
+    rss: rss.xml
+
+assets:
+    sass:
+        style: Nested

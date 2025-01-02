@@ -2,6 +2,7 @@
 layout: default.liquid
 
 title: First Post
+permalink: /post/
 is_draft: true
 ---
 

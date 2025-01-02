@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #011704;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px;
+    background-color: #3A9188;
+    border-style: solid;
+    border-color: #3A9188;
+    border-width: 0.5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px;
+}
+
+header hr {
+    display: flex;
+    height: 3px;
+    margin: 0;
+    border: none;
+    background-color: darkgreen;
+}
+
+header a img {
+    width: 25px;
+    margin: 10px;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    color: blue;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: black;
+    text-decoration: none;
+}
